@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuộc Sống</title>
+    <style>
+         body {
+              font-family:'Times New Roman', Times, serif;
+              margin: 0;
+              padding: 0;
+              background-color: white ;
+         }
+         header{
+            background-color: white;
+            color:black ;
+            padding : 50px;
+            display: flex; /* Thiết lập header là Flex container */
+            flex-direction: column; /* Sắp xếp theo cột */
+            align-items: center; /* Căn giữa theo chiều ngang */
+            text-align: center; 
+            height:auto;
+         }
+         .tongquat {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px;                
+         }
+         section {
+               flex: 1;
+               margin: 0px;
+               padding: 0px;
+               color: black;  
+         }
+         h2 {
+             color: black;
+             background-color: white;
+             height: 60px;
+             margin: 0;
+             text-align: center;
+             display: flex; /* Thiết lập là Flex container */
+             align-items: center; /* Căn giữa theo chiều dọc */
+             justify-content: center; /* Căn giữa theo chiều ngang */
+             border: 2px solid black; /* Thêm đường viền xung quanh */
+             border-radius: 5px; /* Làm tròn góc cho đường viền */
+             padding: 10px; /* Thêm khoảng cách bên trong */
+             box-sizing: border-box; /* Bao gồm padding và border vào tổng chiều cao */
+         }
+         a {
+             color: black ; /* Đặt màu chữ là trắng */
+             text-decoration: none; /* Loại bỏ dấu gạch chân */
+         }
+         a:hover {
+             text-decoration: underline; /* Thêm hiệu ứng gạch chân khi hover nếu muốn */
+         }
+    </style>       
+</head>
+<body>
+<header>
+    <h1>Cuộc Sống Cá Nhân</h1>
+    <img src="./image/anh/su-dung-toc-do-man-trap-cham-hon.jpg" width="60%" height="30%">
+    <i>"gió đã nổi lên rồi, vậy thì tùy duyên thôi!"</i>
+</header>
+<div class="tongquat">
+    <section id="gioithieu">
+        <h2><a href="trangchu.html">Trang Chủ</a></h2>       
+    </section>
+    <section id="cuocsong">
+        <h2><a href="thongtin.html">THÔNG TIN</a></h2>
+    </section>
+    <section id="baiviet">
+        <h2><a href="baivietcuatoi.html">BÀI VIẾT</a></h2>
+    </section>
+</div>
+
+</body>
+</html>

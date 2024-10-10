@@ -1,103 +1,140 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
-        <meta charset="UTF-8">
-        <title>Trang cá nhân của tôi</title>
-        <style>
-             body {
-                  font-family:'Times New Roman', Times, serif;
-                  margin: 0;
-                  padding: 0;
-                  background-color: white ;
-             }
-             header{
-                background-color: white;
-                color:black ;
-                padding : 50px;
-                display: flex; /* Thiết lập header là Flex container */
-                flex-direction: column; /* Sắp xếp theo cột */
-                align-items: center; /* Căn giữa theo chiều ngang */
-                text-align: center; 
-                height:auto;
-             }
-             .tongquat {
-                display: flex;
-                justify-content: space-between;
-                margin: 0px;                
-             }
-             section {
-                   flex: 1;
-                   margin: 0px;
-                   padding: 0px;
-                   color: black;
-                   background-color: white;                   
-                   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-             }
-             h2 {
-                 color: white;
-                 background-color: green;
-                 height: 60px;
-                 margin: 0;
-                 text-align: center;
-                 display: flex; /* Thiết lập là Flex container */
-                 align-items: center; /* Căn giữa theo chiều dọc */
-                 justify-content: center; /* Căn giữa theo chiều ngang */
-                 border: 2px solid black; /* Thêm đường viền xung quanh */
-                 border-radius: 5px; /* Làm tròn góc cho đường viền */
-                 padding: 10px; /* Thêm khoảng cách bên trong */
-                 box-sizing: border-box; /* Bao gồm padding và border vào tổng chiều cao */
-             }
-             
-        </style>       
-          
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Trang cá nhân của tôi</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            background-color: white;
+            color: black;
+            padding: 50px;
+            display: flex; /* Thiết lập header là Flex container */
+            flex-direction: column; /* Sắp xếp theo cột */
+            align-items: center; /* Căn giữa theo chiều ngang */
+            text-align: center;
+            height: auto;
+        }
+        .tongquat {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px;
+        }
+        section {
+            flex: 1;
+            margin: 0px;
+            padding: 0px;
+            color: black;
+        }
+        h2 {
+            color: black;
+            background-color: white;
+            height: 60px;
+            margin: 0;
+            text-align: center;
+            display: flex; /* Thiết lập là Flex container */
+            align-items: center; /* Căn giữa theo chiều dọc */
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            border: 2px solid black; /* Thêm đường viền xung quanh */
+            border-radius: 5px; /* Làm tròn góc cho đường viền */
+            padding: 10px; /* Thêm khoảng cách bên trong */
+            box-sizing: border-box; /* Bao gồm padding và border vào tổng chiều cao */
+        }
+        a {
+            color: black; /* Đặt màu chữ là trắng */
+            text-decoration: none; /* Loại bỏ dấu gạch chân */
+        }
+        a:hover {
+            text-decoration: underline; /* Thêm hiệu ứng gạch chân khi hover nếu muốn */
+        }
+        .image-grid {
+            display: grid; /* Sử dụng grid layout */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Chia thành các cột */
+            gap: 10px; /* Khoảng cách giữa các ô ảnh */
+            padding: 20px; /* Khoảng cách bên trong */
+        }
+        .image-grid img {
+            width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của ô */
+            height: auto; /* Giữ tỷ lệ cho ảnh */
+            border-radius: 5px; /* Làm tròn góc cho ảnh */
+            cursor: pointer; /* Đổi con trỏ khi di chuột qua ảnh */
+            transition: transform 0.2s; /* Thêm hiệu ứng khi hover */
+        }
+        .image-grid img:hover {
+            transform: scale(1.05); /* Phóng to khi hover */
+        }
+        /* CSS cho overlay */
+        .overlay {
+            display: none; /* Ẩn overlay mặc định */
+            position: fixed; /* Đặt overlay cố định */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Nền tối với độ mờ */
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            align-items: center; /* Căn giữa theo chiều dọc */
+            z-index: 1000; /* Đưa overlay lên trên cùng */
+        }
+        .overlay img {
+            max-width: 90%; /* Kích thước tối đa của ảnh */
+            max-height: 90%; /* Chiều cao tối đa của ảnh */
+        }
+        /* Thêm margin cho đoạn chữ "Khoảnh khắc gần đây" */
+        .recent-posts {
+            text-align: left;
+            margin-top: 2em; /* Thay đổi giá trị này để điều chỉnh độ lùi */
+            margin-left: 20px; /* Điều chỉnh giá trị này để lùi vào thêm */
+            font-weight: bolder;
+        }
+    </style>
+</head>
 <body>
 <header>
+    <h1>TRANG CÁ NHÂN CỦA TÔI</h1>
     <img src="./image/anh/33fe00f0699611ef8a2a2bb5f8edfbeb.png" width="60%" height="30%">
-    <h1>trang cá nhân của tui</h1>
+    <i>"Gió đã nổi lên rồi, vậy thì tùy duyên thôi!"</i>
 </header>
 <div class="tongquat">
     <section id="gioithieu">
-        <h2>thông tin</h2>
-        <p> Họ và tên: Huỳnh Hữu Khang
-            <br>
-            Ngày Sinh: 24/09/2005.
-            <br>
-        <a href="thongtin.html">Thông Tin Về Tôi</a>
-        </p>
+        <h2><a href="thongtin.html">THÔNG TIN</a></h2>
     </section>
-    <section id="sothich">
-        <h2>cuộc sống</h2>
-        <ul>
-            <li> <a href="https://invite.duolingo.com/BDHTZTB5CWWKS4KMIKKX6WA7LI">My Doulingo</a></li>
-            <li><a href="https://locket.cam/huynh_huu_khang">My Locket Kết Bạn Với Tôi Nhé</a></li>
-        </ul>       
+    <section id="cuocsong">
+        <h2><a href="cuocsong.html">CUỘC SỐNG</a></h2>
     </section>
-    <section id="cacbaivietcuatoi">
-        <h2>các bài viết của tôi</h2> 
-        <ul>
-            <li><a href="baivietcuatoi.html">bài viết của tôi</a></li>
-            <li><a href="">Một Số Đầu Sách Hay</a></li>
-            <li></li>
-        </ul>
+    <section id="baiviet">
+        <h2><a href="baivietcuatoi.html">BÀI VIẾT</a></h2>
     </section>
 </div>
-<p style="text-align: center;">
-   bài viết gần đây: 17:28 - 28/09/2024.
-    <br>
-    <br>
-    <img src="./image/anh/z5888402915181_2bcbf012ac3b3a33960d12d1eab1bffb.jpg" width="40%" height="10%" >
-    <br>
-    <img src="./image/anh/z5888402916835_70da251d861256cfe6840a33f8bf163d.jpg" width="40%" height="10%" >
-    <br>
-    <img src="./image/anh/z5888402930510_976306b4f1e9b79dfca3a698f2479110.jpg" width="40%" height="10%" >
-    <br>
-    <img src="./image/anh/z5888402944117_a0250c892855e8fa9f1f27995d082200.jpg" width="40%" height="10%" >
-    <br>
-    <img src="./image/anh/z5888402960731_2ee271d3ec34a2ef849093d7a846ced7.jpg" width="40%" height="10%" >
-    <br>
-    <img src="./image/anh/z5888402960876_9b7d40aa4d43442c73954af50e76aa0c.jpg" width="40%" height="10%" >
-    <br>
-</p>
+<p class="recent-posts">Khoảnh khắc gần đây: 17:28 - 28/09/2024.</p>
+<div class="image-grid">
+    <img src="./image/anh/z5888402915181_2bcbf012ac3b3a33960d12d1eab1bffb.jpg" onclick="openModal(this.src)">
+    <img src="./image/anh/z5888402916835_70da251d861256cfe6840a33f8bf163d.jpg" onclick="openModal(this.src)">
+    <img src="./image/anh/z5888402930510_976306b4f1e9b79dfca3a698f2479110.jpg" onclick="openModal(this.src)">
+    <img src="./image/anh/z5888402944117_a0250c892855e8fa9f1f27995d082200.jpg" onclick="openModal(this.src)">
+    <img src="./image/anh/z5888402960731_2ee271d3ec34a2ef849093d7a846ced7.jpg" onclick="openModal(this.src)">
+    <img src="./image/anh/z5888402960876_9b7d40aa4d43442c73954af50e76aa0c.jpg" onclick="openModal(this.src)">
+</div>
+
+<!-- Overlay for full-screen image -->
+<div class="overlay" id="overlay" onclick="closeModal()">
+    <img id="overlayImage" src="" alt="Full Size">
+</div>
+
+<script>
+    function openModal(src) {
+        document.getElementById('overlayImage').src = src; // Set the image source for overlay
+        document.getElementById('overlay').style.display = 'flex'; // Show overlay
+    }
+
+    function closeModal() {
+        document.getElementById('overlay').style.display = 'none'; // Hide overlay
+    }
+</script>
 </body>
 </html>

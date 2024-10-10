@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông Tin</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar section {
+            flex: 1;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar h2 {
+            color: black;
+            background-color: white;
+            height: 60px;
+            margin: 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .navbar a {
+            color: black;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .cv-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+        }
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .header .info {
+            flex-grow: 1;
+        }
+        .header .info h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #333;
+        }
+        .header .info p {
+            margin: 5px 0;
+            color: #777;
+        }
+        .section {
+            margin-top: 20px;
+        }
+        .section h2 {
+            font-size: 22px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <section id="trangchu">
+            <h2><a href="trangchu.html">Trang chủ</a></h2>
+        </section>
+        <section id="cuocsong">
+            <h2><a href="cuocsong.html">CUỘC SỐNG</a></h2>
+        </section>
+        <section id="baiviet">
+            <h2><a href="baivietcuatoi.html">BÀI VIẾT</a></h2>
+        </section>
+    </div>
+
+    <div class="cv-container">
+        <div class="header">
+            <img src="./image/anh/z5354649668608_9d6822b71e8c07e5963408d1d6edde71.jpg">
+            <div class="info">
+                <h1>Huỳnh Hữu Khang</h1>
+                <p>Ngày sinh: 24/09/2005</p>
+                <p>Nơi Sống: Ô Môn - Cần Thơ</p>
+                <p>Email: huynhhuukhang05ct@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Giới thiệu bản thân</h2>
+            <p>Sinh Viên Nghành Hệ Thống Thông Tin K49.</p>
+        </div>
+
+        <div class="section">
+            <h2>Sở Thích</h2>          
+                <li>chạy bộ</li>
+                <li>đọc sách</li>
+                <li>thích chơi sodoku</li>           
+        </div>
+
+        <div class="section">
+            <h2>Học vấn</h2>              
+                <li>Trường trung học phổ thông Lưu Hữu Phước</li>         
+                <li>Trường CNTT & TT - Trường Đại học Cần Thơ</li>
+        </div>
+    </div>
+</body>
+</html>
