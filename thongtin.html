@@ -43,11 +43,10 @@
             text-decoration: underline;
         }
         .cv-container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #fff;
+            width: 100%; /* Chiếm toàn bộ chiều rộng trang */
+            margin: 0; /* Xóa margin */
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: transparent; /* Nền trong suốt */
         }
         .header {
             display: flex;
@@ -123,7 +122,7 @@
             <h2>Sở Thích</h2>          
                 <li>chạy bộ</li>
                 <li>đọc sách</li>
-                <li>thích chơi sodoku</li>           
+                <li>thích chơi sudoku</li>           
         </div>
 
         <div class="section">
@@ -132,5 +131,7 @@
                 <li>Trường CNTT & TT - Trường Đại học Cần Thơ</li>
         </div>
     </div>
+    <iframe src="iframe.html" style="width: 0; height: 0; border: none;"></iframe>
+
 </body>
 </html>

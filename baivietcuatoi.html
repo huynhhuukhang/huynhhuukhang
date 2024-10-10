@@ -1,71 +1,121 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            bài viết
-        </title>
-        <style>
-            body {
-                 font-family:'Times New Roman', Times, serif;
-                 margin: 0;
-                 padding: 0;
-                 background-color: white;
-            }
-            header {
-               background-color: white;
-               color:black;
-               padding: 50px;
-               display: flex;
-               flex-direction: column;
-               align-items: center;
-               text-align: center;
-               height: auto;
-            }
-            .tongquat {
-               display: flex;
-               justify-content: space-between;
-               margin: 0px;
-            }
-            section {
-                  flex: 1;
-                  margin: 0px;
-                  padding: 0px;
-                  color: black;
-            }
-            h2 {
-                color: black; /* Chữ đen */
-                background-color: white; /* Khung trắng */
-                height: 60px;
-                margin: 0;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: 2px solid black; /* Đường viền đen */
-                border-radius: 5px;
-                padding: 10px;
-                box-sizing: border-box;
-            }
-            a {
-                color: black; /* Chữ đen */
-                text-decoration: none;
-            }
-            a:hover {
-                text-decoration: underline;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="tongquat">
-            <section id="trangchu">
-                <h2><a href="trangchu.html">Trang chủ</a></h2>
-            </section>
-            <section id="cuocsong">
-                <h2><a href="cuocsong.html">CUỘC SỐNG</a></h2>
-            </section>
-            <section id="gioithieu">
-                <h2><a href="gioithieu.html">Giới Thiệu</a></h2>
-            </section>
-        </div>
-    </body>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang cá nhân của tôi</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        header {
+            background-color: white;
+            color: black;
+            padding: 50px;
+            display: flex; /* Thiết lập header là Flex container */
+            flex-direction: column; /* Sắp xếp theo cột */
+            align-items: center; /* Căn giữa theo chiều ngang */
+            text-align: center;
+            height: auto;
+            cursor: pointer; /* Thêm hiệu ứng con trỏ khi nhấp vào header */
+        }
+        .tongquat {
+            display: flex;
+            justify-content: space-between;
+            margin: 0px;
+        }
+        section {
+            flex: 1;
+            margin: 0px;
+            padding: 0px;
+            color: black;
+        }
+        h2 {
+            color: black;
+            background-color: white;
+            height: 60px;
+            margin: 0;
+            text-align: center;
+            display: flex; /* Thiết lập là Flex container */
+            align-items: center; /* Căn giữa theo chiều dọc */
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            border: 2px solid black; /* Thêm đường viền xung quanh */
+            border-radius: 5px; /* Làm tròn góc cho đường viền */
+            padding: 10px; /* Thêm khoảng cách bên trong */
+            box-sizing: border-box; /* Bao gồm padding và border vào tổng chiều cao */
+        }
+        a {
+            color: black;
+            text-decoration: none; /* Loại bỏ dấu gạch chân */
+        }
+        a:hover {
+            text-decoration: underline; /* Thêm hiệu ứng gạch chân khi hover */
+        }
+        .image-grid {
+            display: grid; /* Sử dụng grid layout */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Chia thành các cột */
+            gap: 10px; /* Khoảng cách giữa các ô ảnh */
+            padding: 20px; /* Khoảng cách bên trong */
+        }
+        .image-grid img {
+            width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của ô */
+            height: auto; /* Giữ tỷ lệ cho ảnh */
+            border-radius: 5px; /* Làm tròn góc cho ảnh */
+            cursor: pointer; /* Đổi con trỏ khi di chuột qua ảnh */
+            transition: transform 0.2s; /* Thêm hiệu ứng khi hover */
+        }
+        .image-grid img:hover {
+            transform: scale(1.05); /* Phóng to khi hover */
+        }
+        /* CSS cho overlay */
+        .overlay {
+            display: none; /* Ẩn overlay mặc định */
+            position: fixed; /* Đặt overlay cố định */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Nền tối với độ mờ */
+            justify-content: center; /* Căn giữa theo chiều ngang */
+            align-items: center; /* Căn giữa theo chiều dọc */
+            z-index: 1000; /* Đưa overlay lên trên cùng */
+        }
+        .overlay img {
+            max-width: 90%; /* Kích thước tối đa của ảnh */
+            max-height: 90%; /* Chiều cao tối đa của ảnh */
+        }
+        .recent-posts {
+            text-align: left;
+            margin-top: 2em;
+            margin-left: 20px;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+<header onclick="playMusic()"> <!-- Thêm sự kiện onclick vào header -->
+    <h1>CÁC BÀI VIẾT CỦA TÔI</h1>
+    <img src="./image/anh/33fe00f0699611ef8a2a2bb5f8edfbeb.png" width="60%" height="30%">
+    <i>"Gió đã nổi lên rồi, vậy thì tùy duyên thôi!"</i>
+</header>
+
+<!-- Thẻ audio để phát nhạc -->
+<audio id="backgroundMusic" src="./起风了（高橋優 - ヤキモチ）Electric Guitar Version - Vichede.mp3"></audio>
+
+<div class="tongquat">
+    <section id="gioithieu">
+        <h2><a href="trangchu.html">TRANG CHỦ</a></h2>
+    </section>
+    <section id="cuocsong">
+        <h2><a href="cuocsong.html">CUỘC SỐNG</a></h2>
+    </section>
+    <section id="baiviet">
+        <h2><a href="thongtin.html">THÔNG TIN</a></h2>
+    </section>
+</div>
+<iframe src="iframe.html" style="width: 0; height: 0; border: none;"></iframe>
+
+</body>
 </html>

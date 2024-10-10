@@ -14,9 +14,9 @@
             background-color: white;
             color:black ;
             padding : 50px;
-            display: flex; /* Thiết lập header là Flex container */
-            flex-direction: column; /* Sắp xếp theo cột */
-            align-items: center; /* Căn giữa theo chiều ngang */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center; 
             height:auto;
          }
@@ -37,28 +37,69 @@
              height: 60px;
              margin: 0;
              text-align: center;
-             display: flex; /* Thiết lập là Flex container */
-             align-items: center; /* Căn giữa theo chiều dọc */
-             justify-content: center; /* Căn giữa theo chiều ngang */
-             border: 2px solid black; /* Thêm đường viền xung quanh */
-             border-radius: 5px; /* Làm tròn góc cho đường viền */
-             padding: 10px; /* Thêm khoảng cách bên trong */
-             box-sizing: border-box; /* Bao gồm padding và border vào tổng chiều cao */
+             display: flex;
+             align-items: center;
+             justify-content: center;
+             border: 2px solid black;
+             border-radius: 5px;
+             padding: 10px;
+             box-sizing: border-box;
          }
          a {
-             color: black ; /* Đặt màu chữ là trắng */
-             text-decoration: none; /* Loại bỏ dấu gạch chân */
+             color: black;
+             text-decoration: none;
          }
          a:hover {
-             text-decoration: underline; /* Thêm hiệu ứng gạch chân khi hover nếu muốn */
+             text-decoration: underline;
          }
-    </style>       
+
+         /* Định dạng lưới ảnh lớn hơn */
+         .image-grid {
+            display: grid; /* Sử dụng grid layout */
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Chia thành các cột */
+            gap: 10px; /* Khoảng cách giữa các ô ảnh */
+            padding: 20px; /* Khoảng cách bên trong */
+        }
+        .image-grid img {
+            width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của ô */
+            height: auto; /* Giữ tỷ lệ cho ảnh */
+            border-radius: 5px; /* Làm tròn góc cho ảnh */
+            cursor: pointer; /* Đổi con trỏ khi di chuột qua ảnh */
+            transition: transform 0.2s; /* Thêm hiệu ứng khi hover */
+        }
+         .image-grid img:hover {
+             transform: scale(1.05);
+         }
+
+         /* Định dạng overlay hiển thị ảnh toàn màn hình */
+         .overlay {
+             position: fixed;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             background: rgba(0, 0, 0, 0.8);
+             display: none;
+             justify-content: center;
+             align-items: center;
+         }
+         .overlay img {
+             max-width: 90%;
+             max-height: 90%;
+         }
+         .recent-posts {
+            text-align: left;
+            margin-top: 2em;
+            margin-left: 20px;
+            font-weight: bolder;
+        }
+    </style>
 </head>
 <body>
 <header>
     <h1>Cuộc Sống Cá Nhân</h1>
     <img src="./image/anh/su-dung-toc-do-man-trap-cham-hon.jpg" width="60%" height="30%">
-    <i>"gió đã nổi lên rồi, vậy thì tùy duyên thôi!"</i>
+    <i>"Gió đã nổi lên rồi, vậy thì tùy duyên thôi!"</i>
 </header>
 <div class="tongquat">
     <section id="gioithieu">
@@ -72,5 +113,29 @@
     </section>
 </div>
 
+<!-- Thêm phần ảnh giống Instagram -->
+
+<p class="recent-posts">ngày 19 tháng 11 năm 2022</p>
+<div class="image-grid">
+    <img src="./image/anh/z5316732215048_29da910549a63e4e97a7deab29000761.jpg" onclick="openModal(this.src)">
+    <img src="./image/anh/z5316732096448_d6bafa4d53822d482299c581a8db3b92.jpg" onclick="openModal(this.src)">
+</div>
+
+<!-- Overlay for full-screen image -->
+<div class="overlay" id="overlay" onclick="closeModal()">
+    <img id="overlayImage" src="" alt="Full Size">
+</div>
+<script>
+    // Hàm mở overlay và hiển thị ảnh lớn
+    function openModal(src) {
+        document.getElementById('overlay').style.display = 'flex';
+        document.getElementById('overlayImage').src = src;
+    }
+
+    // Hàm đóng overlay
+    function closeModal() {
+        document.getElementById('overlay').style.display = 'none';
+    }
+</script>
 </body>
 </html>

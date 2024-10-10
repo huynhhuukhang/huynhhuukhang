@@ -19,6 +19,7 @@
             align-items: center; /* Căn giữa theo chiều ngang */
             text-align: center;
             height: auto;
+            cursor: pointer; /* Thêm hiệu ứng con trỏ khi nhấp vào header */
         }
         .tongquat {
             display: flex;
@@ -46,11 +47,11 @@
             box-sizing: border-box; /* Bao gồm padding và border vào tổng chiều cao */
         }
         a {
-            color: black; /* Đặt màu chữ là trắng */
+            color: black;
             text-decoration: none; /* Loại bỏ dấu gạch chân */
         }
         a:hover {
-            text-decoration: underline; /* Thêm hiệu ứng gạch chân khi hover nếu muốn */
+            text-decoration: underline; /* Thêm hiệu ứng gạch chân khi hover */
         }
         .image-grid {
             display: grid; /* Sử dụng grid layout */
@@ -85,21 +86,22 @@
             max-width: 90%; /* Kích thước tối đa của ảnh */
             max-height: 90%; /* Chiều cao tối đa của ảnh */
         }
-        /* Thêm margin cho đoạn chữ "Khoảnh khắc gần đây" */
         .recent-posts {
             text-align: left;
-            margin-top: 2em; /* Thay đổi giá trị này để điều chỉnh độ lùi */
-            margin-left: 20px; /* Điều chỉnh giá trị này để lùi vào thêm */
+            margin-top: 2em;
+            margin-left: 20px;
             font-weight: bolder;
         }
     </style>
 </head>
 <body>
-<header>
+<header onclick="playMusic()"> <!-- Thêm sự kiện onclick vào header -->
     <h1>TRANG CÁ NHÂN CỦA TÔI</h1>
     <img src="./image/anh/33fe00f0699611ef8a2a2bb5f8edfbeb.png" width="60%" height="30%">
     <i>"Gió đã nổi lên rồi, vậy thì tùy duyên thôi!"</i>
 </header>
+
+<!-- Thẻ audio để phát nhạc -->
 <div class="tongquat">
     <section id="gioithieu">
         <h2><a href="thongtin.html">THÔNG TIN</a></h2>
@@ -131,7 +133,6 @@
         document.getElementById('overlayImage').src = src; // Set the image source for overlay
         document.getElementById('overlay').style.display = 'flex'; // Show overlay
     }
-
     function closeModal() {
         document.getElementById('overlay').style.display = 'none'; // Hide overlay
     }
