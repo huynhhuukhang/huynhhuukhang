@@ -14,23 +14,21 @@
             background-color: white;
             color: black;
             padding: 50px;
-            display: flex; /* Thiết lập header là Flex container */
-            flex-direction: column; /* Sắp xếp theo cột */
-            align-items: center; /* Căn giữa theo chiều ngang */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
-            height: auto;
-            cursor: pointer; /* Thêm hiệu ứng con trỏ khi nhấp vào header */
         }
         .tongquat {
             display: flex;
             justify-content: space-between;
-            margin: 0px;
+            margin: 0px;                
         }
         section {
             flex: 1;
             margin: 0px;
             padding: 0px;
-            color: black;
+            color: black;  
         }
         h2 {
             color: black;
@@ -38,53 +36,51 @@
             height: 60px;
             margin: 0;
             text-align: center;
-            display: flex; /* Thiết lập là Flex container */
-            align-items: center; /* Căn giữa theo chiều dọc */
-            justify-content: center; /* Căn giữa theo chiều ngang */
-            border: 2px solid black; /* Thêm đường viền xung quanh */
-            border-radius: 5px; /* Làm tròn góc cho đường viền */
-            padding: 10px; /* Thêm khoảng cách bên trong */
-            box-sizing: border-box; /* Bao gồm padding và border vào tổng chiều cao */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            box-sizing: border-box;
         }
         a {
             color: black;
-            text-decoration: none; /* Loại bỏ dấu gạch chân */
+            text-decoration: none;
         }
         a:hover {
-            text-decoration: underline; /* Thêm hiệu ứng gạch chân khi hover */
+            text-decoration: underline;
         }
         .image-grid {
-            display: grid; /* Sử dụng grid layout */
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Chia thành các cột */
-            gap: 10px; /* Khoảng cách giữa các ô ảnh */
-            padding: 20px; /* Khoảng cách bên trong */
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
         }
         .image-grid img {
-            width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng của ô */
-            height: auto; /* Giữ tỷ lệ cho ảnh */
-            border-radius: 5px; /* Làm tròn góc cho ảnh */
-            cursor: pointer; /* Đổi con trỏ khi di chuột qua ảnh */
-            transition: transform 0.2s; /* Thêm hiệu ứng khi hover */
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.2s;
         }
         .image-grid img:hover {
-            transform: scale(1.05); /* Phóng to khi hover */
+            transform: scale(1.05);
         }
-        /* CSS cho overlay */
         .overlay {
-            display: none; /* Ẩn overlay mặc định */
-            position: fixed; /* Đặt overlay cố định */
+            display: none;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.8); /* Nền tối với độ mờ */
-            justify-content: center; /* Căn giữa theo chiều ngang */
-            align-items: center; /* Căn giữa theo chiều dọc */
-            z-index: 1000; /* Đưa overlay lên trên cùng */
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
         }
         .overlay img {
-            max-width: 90%; /* Kích thước tối đa của ảnh */
-            max-height: 90%; /* Chiều cao tối đa của ảnh */
+            max-width: 90%;
+            max-height: 90%;
         }
         .recent-posts {
             text-align: left;
@@ -92,16 +88,31 @@
             margin-left: 20px;
             font-weight: bolder;
         }
+        #prevBtn, #nextBtn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            padding: 10px;
+        }
+        #prevBtn {
+            left: 10px;
+        }
+        #nextBtn {
+            right: 10px;
+        }
     </style>
 </head>
 <body>
-<header onclick="playMusic()"> <!-- Thêm sự kiện onclick vào header -->
+<header>
     <h1>TRANG CÁ NHÂN CỦA TÔI</h1>
     <img src="./image/anh/33fe00f0699611ef8a2a2bb5f8edfbeb.png" width="60%" height="30%">
-    <i>"Gió đã nổi lên rồi, vậy thì tùy duyên thôi!"</i>
+    <i>"Những rung động ngày xưa, thì hãy để gió cuốn bay đi"</i>
 </header>
 
-<!-- Thẻ audio để phát nhạc -->
 <div class="tongquat">
     <section id="gioithieu">
         <h2><a href="thongtin.html">THÔNG TIN</a></h2>
@@ -123,18 +134,41 @@
     <img src="./image/anh/z5888402960876_9b7d40aa4d43442c73954af50e76aa0c.jpg" onclick="openModal(this.src)">
 </div>
 
-<!-- Overlay for full-screen image -->
 <div class="overlay" id="overlay" onclick="closeModal()">
     <img id="overlayImage" src="" alt="Full Size">
+    <button id="prevBtn" onclick="changeImage(-1); event.stopPropagation();">&#10094;</button>
+    <button id="nextBtn" onclick="changeImage(1); event.stopPropagation();">&#10095;</button>
 </div>
 
 <script>
+    let currentImageIndex = 0; 
+    const images = [
+        './image/anh/z5888402915181_2bcbf012ac3b3a33960d12d1eab1bffb.jpg',
+        './image/anh/z5888402916835_70da251d861256cfe6840a33f8bf163d.jpg',
+        './image/anh/z5888402930510_976306b4f1e9b79dfca3a698f2479110.jpg',
+        './image/anh/z5888402944117_a0250c892855e8fa9f1f27995d082200.jpg',
+        './image/anh/z5888402960731_2ee271d3ec34a2ef849093d7a846ced7.jpg',
+        './image/anh/z5888402960876_9b7d40aa4d43442c73954af50e76aa0c.jpg'
+    ];
+
     function openModal(src) {
-        document.getElementById('overlayImage').src = src; // Set the image source for overlay
-        document.getElementById('overlay').style.display = 'flex'; // Show overlay
+        currentImageIndex = images.indexOf(src); 
+        document.getElementById('overlayImage').src = src; 
+        document.getElementById('overlay').style.display = 'flex'; 
     }
+
+    function changeImage(direction) {
+        currentImageIndex += direction; 
+        if (currentImageIndex < 0) {
+            currentImageIndex = images.length - 1; 
+        } else if (currentImageIndex >= images.length) {
+            currentImageIndex = 0; 
+        }
+        document.getElementById('overlayImage').src = images[currentImageIndex]; 
+    }
+
     function closeModal() {
-        document.getElementById('overlay').style.display = 'none'; // Hide overlay
+        document.getElementById('overlay').style.display = 'none'; 
     }
 </script>
 </body>

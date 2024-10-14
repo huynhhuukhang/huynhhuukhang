@@ -4,57 +4,57 @@
     <meta charset="UTF-8">
     <title>Cuộc Sống</title>
     <style>
-         body {
-              font-family:'Times New Roman', Times, serif;
-              margin: 0;
-              padding: 0;
-              background-color: white ;
-         }
-         header{
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
             background-color: white;
-            color:black ;
-            padding : 50px;
+        }
+        header {
+            background-color: white;
+            color: black;
+            padding: 50px;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center; 
-            height:auto;
-         }
-         .tongquat {
+            height: auto;
+        }
+        .tongquat {
             display: flex;
             justify-content: space-between;
             margin: 0px;                
-         }
-         section {
-               flex: 1;
-               margin: 0px;
-               padding: 0px;
-               color: black;  
-         }
-         h2 {
-             color: black;
-             background-color: white;
-             height: 60px;
-             margin: 0;
-             text-align: center;
-             display: flex;
-             align-items: center;
-             justify-content: center;
-             border: 2px solid black;
-             border-radius: 5px;
-             padding: 10px;
-             box-sizing: border-box;
-         }
-         a {
-             color: black;
-             text-decoration: none;
-         }
-         a:hover {
-             text-decoration: underline;
-         }
+        }
+        section {
+            flex: 1;
+            margin: 0px;
+            padding: 0px;
+            color: black;  
+        }
+        h2 {
+            color: black;
+            background-color: white;
+            height: 60px;
+            margin: 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
 
-         /* Định dạng lưới ảnh lớn hơn */
-         .image-grid {
+        /* Định dạng lưới ảnh lớn hơn */
+        .image-grid {
             display: grid; /* Sử dụng grid layout */
             grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Chia thành các cột */
             gap: 10px; /* Khoảng cách giữa các ô ảnh */
@@ -67,31 +67,60 @@
             cursor: pointer; /* Đổi con trỏ khi di chuột qua ảnh */
             transition: transform 0.2s; /* Thêm hiệu ứng khi hover */
         }
-         .image-grid img:hover {
-             transform: scale(1.05);
-         }
+        .image-grid img:hover {
+            transform: scale(1.05);
+        }
 
-         /* Định dạng overlay hiển thị ảnh toàn màn hình */
-         .overlay {
-             position: fixed;
-             top: 0;
-             left: 0;
-             width: 100%;
-             height: 100%;
-             background: rgba(0, 0, 0, 0.8);
-             display: none;
-             justify-content: center;
-             align-items: center;
-         }
-         .overlay img {
-             max-width: 90%;
-             max-height: 90%;
-         }
-         .recent-posts {
+        /* Định dạng overlay hiển thị ảnh toàn màn hình */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+        .overlay img {
+            max-width: 90%;
+            max-height: 90%;
+        }
+        .recent-posts {
+            display: flex; /* Sử dụng flex để căn giữa */
+            align-items: center; /* Căn giữa theo chiều dọc */
             text-align: left;
             margin-top: 2em;
             margin-left: 20px;
             font-weight: bolder;
+        }
+        .circle {
+            width: 30px; /* Đường kính vòng tròn nhỏ hơn */
+            height: 30px; /* Đường kính vòng tròn nhỏ hơn */
+            border-radius: 50%; /* Tạo hình tròn */
+            overflow: hidden; /* Ẩn phần thừa */
+            display: inline-block; /* Để vòng tròn nằm cạnh văn bản */
+            margin-right: 10px; /* Khoảng cách giữa vòng tròn và văn bản */
+            /* Xóa margin-top để căn giữa */
+        }
+        .circle img {
+            width: 100%; /* Ảnh chiếm toàn bộ vòng tròn */
+            height: auto; /* Giữ tỷ lệ cho ảnh */
+        }
+        .comment-section {
+            margin: 20px;
+        }
+        .comment-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .comment {
+            margin-bottom: 10px;
+        }
+        .emojis {
+            cursor: pointer;
+            margin-right: 10px;
         }
     </style>
 </head>
@@ -99,11 +128,11 @@
 <header>
     <h1>Cuộc Sống Cá Nhân</h1>
     <img src="./image/anh/su-dung-toc-do-man-trap-cham-hon.jpg" width="60%" height="30%">
-    <i>"Gió đã nổi lên rồi, vậy thì tùy duyên thôi!"</i>
+    <i>"Nếu tim này đã rung động thì cứ để mọi thứ tùy duyên thôi"</i>
 </header>
 <div class="tongquat">
     <section id="gioithieu">
-        <h2><a href="trangchu.html">Trang Chủ</a></h2>       
+        <h2><a href="trangchu.html">TRANG CHỦ</a></h2>       
     </section>
     <section id="cuocsong">
         <h2><a href="thongtin.html">THÔNG TIN</a></h2>
@@ -114,8 +143,12 @@
 </div>
 
 <!-- Thêm phần ảnh giống Instagram -->
-
-<p class="recent-posts">ngày 19 tháng 11 năm 2022</p>
+<p class="recent-posts">
+    <span class="circle">
+        <img src="./image/anh/anh_dai_dien.jpg" alt="Ảnh của bạn"> <!-- Thay thế 'your-photo.jpg' bằng đường dẫn đến ảnh của bạn -->
+    </span>
+    ngày 19 tháng 11 năm 2022
+</p>
 <div class="image-grid">
     <img src="./image/anh/z5316732215048_29da910549a63e4e97a7deab29000761.jpg" onclick="openModal(this.src)">
     <img src="./image/anh/z5316732096448_d6bafa4d53822d482299c581a8db3b92.jpg" onclick="openModal(this.src)">
@@ -125,6 +158,25 @@
 <div class="overlay" id="overlay" onclick="closeModal()">
     <img id="overlayImage" src="" alt="Full Size">
 </div>
+
+<!-- Phần bình luận và cảm xúc -->
+<div class="comment-section">
+    <h3>Bình luận:</h3>
+    <div>
+        <span class="emojis" onclick="addReaction('❤️')">❤️</span>
+        <span class="emojis" onclick="addReaction('👍')">👍</span>
+        <span class="emojis" onclick="addReaction('😂')">😂</span>
+        <span class="emojis" onclick="addReaction('😢')">😢</span>
+        <span class="emojis" onclick="addReaction('😮')">😮</span>
+    </div>
+    <form id="commentForm" onsubmit="return addComment();">
+        <input type="text" id="nameInput" placeholder="Nhập tên của bạn" required>
+        <input type="text" id="commentInput" placeholder="Nhập bình luận của bạn" required>
+        <button type="submit">Gửi</button>
+    </form>
+    <ul class="comment-list" id="commentList"></ul>
+</div>
+
 <script>
     // Hàm mở overlay và hiển thị ảnh lớn
     function openModal(src) {
@@ -135,6 +187,29 @@
     // Hàm đóng overlay
     function closeModal() {
         document.getElementById('overlay').style.display = 'none';
+    }
+
+    // Hàm thêm bình luận
+    function addComment() {
+        const nameInput = document.getElementById('nameInput');
+        const commentInput = document.getElementById('commentInput');
+        const commentList = document.getElementById('commentList');
+
+        const li = document.createElement('li');
+        li.classList.add('comment');
+        li.textContent = nameInput.value + ": " + commentInput.value; // Kết hợp tên và bình luận
+        commentList.appendChild(li);
+
+        nameInput.value = ''; // Xóa trường nhập tên sau khi gửi
+        commentInput.value = ''; // Xóa trường nhập sau khi gửi
+        return false; // Ngăn chặn gửi form thực tế
+    }
+
+    // Hàm thêm biểu tượng cảm xúc
+    function addReaction(emoji) {
+        const commentInput = document.getElementById('commentInput');
+        commentInput.value += emoji; // Thêm biểu tượng cảm xúc vào trường nhập
+        commentInput.focus(); // Đặt con trỏ vào trường nhập
     }
 </script>
 </body>
