@@ -1,4 +1,4 @@
-# Hi, I'm Huynh Huu Khang (黄又康）
+# Hi, I'm Huynh Huu Khang
 
 IT student focused on **Linux and Cloud Computing**.
 
