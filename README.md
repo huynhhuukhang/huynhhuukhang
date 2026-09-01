@@ -1,20 +1,29 @@
 # Hi, I'm Huynh Huu Khang 👋
 
-I'm an Information Technology student passionate about **Linux, Cloud Computing, and Backend Development**. I enjoy learning how modern systems are built, from operating systems and networking to databases and cloud infrastructure.
+I'm an Information Technology student interested in **Linux System Administration, Networking, Cloud Computing, and Automation**.
+
+I'm currently building hands-on experience with Linux servers, system administration, networking, scripting, and infrastructure tools.
 
 ## Currently Learning
 
 * Linux System Administration
 * Computer Networking
-* SQL & Database Design
+* Bash Shell Scripting
 * Python Programming
-* Cloud Computing Fundamentals
+* SQL & PostgreSQL
 * Git & GitHub
+* Cloud Computing Fundamentals
 
 ## Interests
 
+* Linux & System Administration
 * Cloud Infrastructure
-* Backend Development
-* System Design
+* Networking
 * Automation
+* DevOps
 * Open Source
+
+## Projects
+
+* 🐧 [Linux Sysadmin Labs](https://github.com/huynhhuukhang/linux-sysadmin-labs)
+* 🐍 [Python LeetCode](https://github.com/huynhhuukhang/python_leetcode)
