@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/huynhhuukhang">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=25&duration=2800&pause=1000&color=10B981&center=true&vCenter=true&width=750&lines=khang%40sysadmin%3A~%24+echo+%22Hu%E1%BB%B3nh+H%E1%BB%AFu+Khang%22;Information+Systems+Student+%7C+SysAdmin+%26+Automation" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=25&duration=2800&pause=1000&color=10B981&center=true&vCenter=true&width=750&lines=khang%40sysadmin%3A~%24+echo+%22Hu%E1%BB%B3nh+H%E1%BB%AFu+Khang%22; Information+Systems+Student+%7C+SysAdmin+%26+Automation" alt="Typing SVG" />
   </a>
 </div>
 
