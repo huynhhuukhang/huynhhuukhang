@@ -48,4 +48,4 @@ I am an Information Technology student focused on building, managing, and troubl
 - **GitHub:** [github.com/huynhhuukhang](https://github.com/huynhhuukhang)
 <!-- Bổ sung thêm LinkedIn hoặc Email của bạn tại đây -->
 <!-- - **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile) -->
-<!-- - **Email:** huynhhuukhang05ct@gmail.com -->
+- **Email:** huynhhuukhang05ct@gmail.com 
