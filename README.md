@@ -1,47 +1,40 @@
 <div align="center">
   <a href="https://github.com/huynhhuukhang">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&duration=3000&pause=1000&color=2F81F7&center=true&vCenter=true&width=650&lines=Hi%2C+I'm+Hu%E1%BB%B3nh+H%E1%BB%AFu+Khang+%F0%9F%91%8B;IT+Student+%7C+System+Administration+%26+Automation" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=25&duration=2800&pause=1000&color=10B981&center=true&vCenter=true&width=750&lines=khang%40sysadmin%3A~%24+echo+%22Hu%E1%BB%B3nh+H%E1%BB%AFu+Khang%22;Information+Systems+Student+%7C+SysAdmin+%26+Automation" alt="Typing SVG" />
   </a>
 </div>
 
 ---
 
-### 👨‍💻 About Me
+### `root@khang:~# whoami`
 
-I am an Information System student focusing on **System Administration, Computer Networking, and Infrastructure Automation**. 
+I am an **Information Systems student** focusing on **System Administration, Computer Networking, and Infrastructure Automation**.
 
-I have hands-on experience configuring and managing both Linux and Windows server environments, setting up core network services, and writing scripts in Bash and Python to automate backup, recovery, and monitoring tasks.
+I have hands-on experience configuring and managing both **Linux** and **Windows Server** environments, setting up core network services, and writing **Bash** and **Python** scripts to automate backup, recovery, and system monitoring tasks.
 
 ---
 
-### 🛠️ Technical Skills
+### `root@khang:~# cat /etc/technical-stack.conf`
 
-* **Languages & Scripting:** 
+* **Scripting & Programming:**  
+  ![Bash](https://img.shields.io/badge/GNU%20Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
   ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-  ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
   ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
-* **Operating Systems:** 
+* **Server OS:**  
   ![Ubuntu Server](https://img.shields.io/badge/Ubuntu%20Server-E95420?style=flat-square&logo=ubuntu&logoColor=white)
-  ![RHEL](https://img.shields.io/badge/Red%20Hat%20Enterprise%20Linux-EE0000?style=flat-square&logo=redhat&logoColor=white)
+  ![RHEL](https://img.shields.io/badge/RHEL-EE0000?style=flat-square&logo=redhat&logoColor=white)
   ![Windows Server](https://img.shields.io/badge/Windows%20Server-0078D6?style=flat-square&logo=windows&logoColor=white)
-* **Database:** 
+* **Database:**  
   ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-* **Networking & Protocols:** VLAN, DHCP, SSH, TCP/UDP, Core Network Services
-* **System Operations:** Backup & Restore, Server Monitoring, Task Automation
-* **Languages:** Vietnamese (Native), English (B2)
 
----
+```ini
+[networking_and_protocols]
+services  = DHCP, SSH, Core Network Services
+switching = VLANConfiguration
+transport = TCP/UDP
 
-### 📂 Projects & Practice
+[system_operations]
+tasks     = Backup & Restore, Server Health Monitoring, Task Automation
 
-| Project | Description | Tech Stack |
-| :--- | :--- | :--- |
-| 🐧 **[Linux Server Backup & Monitoring Toolkit](https://github.com/huynhhuukhang/Linux-Server-Backup-Monitoring-Toolkit)** | Scripts and tools for automating system backups, data restoration, and server health monitoring on Linux environments. | `Bash` `Linux` |
-| ⚙️ **[Python SysAdmin Automation Toolkit](https://github.com/huynhhuukhang/Python-Based-SysAdmin-Automation-Infrastructure-Management-Toolkit)** | Python-based toolkit built to automate daily system administration tasks and assist with infrastructure management. | `Python` `Automation` |
-| 🐍 **[Python LeetCode](https://github.com/huynhhuukhang/python_leetcode)** | My solutions to LeetCode problems to practice data structures, algorithms, and programming logic. | `Python` |
-
----
-
-### 📫 Contact
-
-- **GitHub:** [github.com/huynhhuukhang](https://github.com/huynhhuukhang)
+[languages]
+en_US     = B2 (Upper-Intermediate)
