@@ -82,5 +82,5 @@ I have hands-on experience configuring and managing both **Linux** and **Windows
 
 ### 📫 Contact
 
-- **GitHub:** [github.com/huynhhuukhang](https://github.com/huynhhuukhang
-- **Email:** huynhhuukhang05ct@gmail.com
+- **GitHub:** [github.com/huynhhuukhang](https://github.com/huynhhuukhang)
+- **Email:** [huynhhuukhang05ct@gmail.com]
