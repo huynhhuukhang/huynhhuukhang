@@ -66,6 +66,21 @@ I have hands-on experience configuring and managing both **Linux** and **Windows
 
 ---
 
+### 📊 GitHub Stats
+
+<table>
+  <tr>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api?username=huynhhuukhang&hide_border=true&bg_color=00000000&title_color=4C35DE&text_color=2B6E78&ring_color=5A32EA" alt="Huynh Huu Khang's GitHub Stats" />
+    </td>
+    <td>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=huynhhuukhang&layout=compact&langs_count=6&hide_border=true&bg_color=00000000&title_color=4C35DE&text_color=2B6E78" alt="Most Used Languages" />
+    </td>
+  </tr>
+</table>
+
+---
+
 ### 📫 Contact
 
 - **GitHub:** [github.com/huynhhuukhang](https://github.com/huynhhuukhang)
