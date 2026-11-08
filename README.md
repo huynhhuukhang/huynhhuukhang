@@ -1,7 +1,6 @@
 <div align="center">
-  <a href="https://github.com/huynhhuukhang">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=27&duration=3000&pause=1000&color=2F81F7&center=true&vCenter=true&width=720&lines=Hi%2C+I'm+Hu%E1%BB%B3nh+H%E1%BB%AFu+Khang+%F0%9F%91%8B;IT+Student+%7C+System+Administration+%26+Automation" alt="Typing SVG" />
-  </a>
+  <h1>Hi, I'm Huỳnh Hữu Khang</h1>
+  <p><b>IT Student | System Administration & Automation</b></p>
 
   <p align="center">
     <img src="https://img.shields.io/badge/Focus-SysAdmin_%26_Networking-2F81F7?style=flat-square" alt="Focus" />
@@ -14,7 +13,7 @@
 
 ### 👨‍💻 About Me
 
-I am an Information Technology student focusing on **System Administration, Computer Networking, and Infrastructure Automation**.
+I am an Information System student focusing on **System Administration, Computer Networking, and Infrastructure Automation**.
 
 I have hands-on experience configuring and managing both **Linux** and **Windows Server** environments on **Hyper-V**, setting up core network services, and writing scripts in **Bash** and **Python** to automate backup, recovery, and monitoring tasks.
 
