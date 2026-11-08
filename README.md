@@ -8,7 +8,7 @@
 
 ### 👨‍💻 About Me
 
-I am an Information Technology student focusing on **System Administration, Computer Networking, and Infrastructure Automation**. 
+I am an Information System student focusing on **System Administration, Computer Networking, and Infrastructure Automation**. 
 
 I have hands-on experience configuring and managing both Linux and Windows server environments, setting up core network services, and writing scripts in Bash and Python to automate backup, recovery, and monitoring tasks.
 
