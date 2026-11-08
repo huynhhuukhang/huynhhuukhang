@@ -1,30 +1,71 @@
 <div align="center">
   <a href="https://github.com/huynhhuukhang">
-    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=26&duration=2600&pause=1000&color=00F763&center=true&vCenter=true&width=820&lines=root%40khang%3A~%23+whoami+%E2%86%92+Hu%E1%BB%B3nh+H%E1%BB%AFu+Khang;Information+Systems+Student+%7C+System+Administration;Linux+%26+Windows+Server+%7C+Hyper-V+%7C+Networking+%7C+Automation" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=27&duration=3000&pause=1000&color=2F81F7&center=true&vCenter=true&width=720&lines=Hi%2C+I'm+Hu%E1%BB%B3nh+H%E1%BB%AFu+Khang+%F0%9F%91%8B;IT+Student+%7C+System+Administration+%26+Automation" alt="Typing SVG" />
   </a>
 
   <p align="center">
-    <img src="https://img.shields.io/badge/ROLE-SYSADMIN_STUDENT-00F763?style=for-the-badge&labelColor=0D1117" alt="Role" />
-    <img src="https://img.shields.io/badge/VIRTUALIZATION-HYPER--V-0078D6?style=for-the-badge&labelColor=0D1117" alt="Hyper-V" />
-    <img src="https://img.shields.io/badge/ENGLISH_LEVEL-B2-F59E0B?style=for-the-badge&labelColor=0D1117" alt="English Level B2" />
+    <img src="https://img.shields.io/badge/Focus-SysAdmin_%26_Networking-2F81F7?style=flat-square" alt="Focus" />
+    <img src="https://img.shields.io/badge/Virtualization-Hyper--V-0078D6?style=flat-square" alt="Hyper-V" />
+    <img src="https://img.shields.io/badge/English-B2_(Upper--Intermediate)-10B981?style=flat-square" alt="English B2" />
   </p>
 </div>
 
 ---
 
-### ⚡ `systemctl status sysadmin-profile.service`
+### 👨‍💻 About Me
 
-```diff
-● sysadmin-profile.service - Huynh Huu Khang | Information Systems Student
-   Loaded: loaded (/etc/systemd/system/khang-profile.service; enabled)
-+  Active: active (running) — Hands-on Lab & Practice
-   
-   [OVERVIEW]
-   I am an Information Systems student focusing on System Administration,
-   Computer Networking, Virtualization, and Infrastructure Automation.
-   
-   [HANDS-ON EXPERIENCE]
-+  • Server OS & Virtualization: Ubuntu Server, RHEL, Windows Server, and Hyper-V.
-+  • Networking & Services: VLAN, DHCP, SSH, TCP/UDP, and Core Network Services.
-+  • Operations & Scripting: Backup, Restore, and Server Monitoring with Bash & Python.
-+  • Foreign Language: English Level B2.
+I am an Information Technology student focusing on **System Administration, Computer Networking, and Infrastructure Automation**.
+
+I have hands-on experience configuring and managing both **Linux** and **Windows Server** environments on **Hyper-V**, setting up core network services, and writing scripts in **Bash** and **Python** to automate backup, recovery, and monitoring tasks.
+
+---
+
+### 🛠️ Technical Skills
+
+- **Languages & Scripting:**<br>
+  ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+  ![Bash](https://img.shields.io/badge/Bash_Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white)
+  ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+
+- **Server OS & Virtualization:**<br>
+  ![Ubuntu Server](https://img.shields.io/badge/Ubuntu_Server-E95420?style=flat-square&logo=ubuntu&logoColor=white)
+  ![RHEL](https://img.shields.io/badge/Red_Hat_Enterprise_Linux-EE0000?style=flat-square&logo=redhat&logoColor=white)
+  ![Windows Server](https://img.shields.io/badge/Windows_Server-0078D6?style=flat-square&logo=windows&logoColor=white)
+  ![Hyper-V](https://img.shields.io/badge/Hyper--V-00BCF2?style=flat-square&logo=microsoft&logoColor=white)
+
+- **Database & Version Control:**<br>
+  ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+  ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+  ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
+
+- **Networking & Protocols:**<br>
+  ![VLAN](https://img.shields.io/badge/VLAN-1E293B?style=flat-square)
+  ![DHCP](https://img.shields.io/badge/DHCP-1E293B?style=flat-square)
+  ![SSH](https://img.shields.io/badge/SSH-1E293B?style=flat-square)
+  ![TCP/UDP](https://img.shields.io/badge/TCP_%2F_UDP-1E293B?style=flat-square)
+  ![Core Network Services](https://img.shields.io/badge/Core_Network_Services-1E293B?style=flat-square)
+
+- **System Operations:**<br>
+  ![Backup & Restore](https://img.shields.io/badge/Backup_%26_Restore-0F766E?style=flat-square)
+  ![Server Monitoring](https://img.shields.io/badge/Server_Monitoring-0F766E?style=flat-square)
+  ![Task Automation](https://img.shields.io/badge/Task_Automation-0F766E?style=flat-square)
+
+- **Languages:**<br>
+  ![Vietnamese](https://img.shields.io/badge/Vietnamese-Native-475569?style=flat-square)
+  ![English](https://img.shields.io/badge/English-B2_(Upper--Intermediate)-2563EB?style=flat-square)
+
+---
+
+### 📂 Projects & Practice
+
+| Project | Description | Tech Stack |
+| :--- | :--- | :---: |
+| 🐧 **[Linux Server Backup & Monitoring Toolkit](https://github.com/huynhhuukhang/Linux-Server-Backup-Monitoring-Toolkit)** | Scripts and tools for automating system backups, data restoration, and server health monitoring on Linux environments. | ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black) |
+| ⚙️ **[Python SysAdmin Automation Toolkit](https://github.com/huynhhuukhang/Python-Based-SysAdmin-Automation-Infrastructure-Management-Toolkit)** | Python-based toolkit built to automate daily system administration tasks and assist with infrastructure management. | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Automation](https://img.shields.io/badge/Automation-2F81F7?style=flat-square) |
+| 🐍 **[Python LeetCode](https://github.com/huynhhuukhang/python_leetcode)** | My solutions to LeetCode problems to practice data structures, algorithms, and programming logic. | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![DSA](https://img.shields.io/badge/Algorithms-64748B?style=flat-square) |
+
+---
+
+### 📫 Contact
+
+- **GitHub:** [github.com/huynhhuukhang](https://github.com/huynhhuukhang)
